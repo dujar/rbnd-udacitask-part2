@@ -2,7 +2,7 @@ class UdaciList
   attr_accessor :title, :items
 
   def initialize(options={})
-    @title = options[:title]|| "Untitled List"
+      @title = options[:title]|| Rainbow("Untitled List").bg(:red)
     @items = []
   end
   def add(type, description, options={})
@@ -45,11 +45,12 @@ class UdaciList
           selected = TodoItem
       end
       theone =[]
-      self.all.each do |select|
+     @items.each do |select|
           if select.class == selected
               theone << select
           end
       end
-      theone
+
+      return theone
   end
 end

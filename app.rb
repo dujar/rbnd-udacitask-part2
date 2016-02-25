@@ -1,6 +1,7 @@
  require 'chronic'
  require 'colorize'
  require 'pp'
+ require 'rainbow'
 # Find a third gem of your choice and add it to your project
 require 'date'
 require_relative "lib/listable"
@@ -43,8 +44,7 @@ list.all
 # DISPLAY UNTITLED LIST
 # ---------------------
  new_list.all
- pp new_list
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
- new_list.filter("event")
+pp new_list.filter("event")
