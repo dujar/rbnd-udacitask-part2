@@ -1,5 +1,5 @@
 class UdaciList
-  attr_reader :title, :items
+  attr_accessor :title, :items
 
   def initialize(options={})
     @title = options[:title]
