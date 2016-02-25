@@ -1,13 +1,23 @@
 # What you added to Udacitask 2.0
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
+I have used gem rainbow for coloring the background of the priority arrows and aldo the default titles.
+I used pp to help me out understand the structure of the data.
+
 2. Describe the 2 features you added to the project.
-  a) Feature 1...
-  b) Feature 2...
+  a) I have added an Error message for invalid number of arguments, if it exceeds the ones provided.
+  b) I have provided default values for the options
 
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
+    It took me the whole day. 
 2. What was the most rewarding challenge you conquered?
+    I went too much ahead of myself without reading the instructions, so it was adventurous and rewarding since it worked my way.
+    The most rewarding I believe will be when I will display the filter items properly. Still trying to figure it out.
 3. What two additional features did you build? Why?
+    I added error messages because it felt natural to have a set of arguments for the todo lists in order to keep consistency over the outcome.
+    Felt natural to provide default values in red, in order for the user to add them later on.
+
 4. Where do you still have room to grow?
+    I believe I need to find a way on researching efficiently. It is time consuming. I have not yet found a proper website where there would be a sort of abstract about a gem from developers. Lots of room to grow in coding efficiently and think ahead.

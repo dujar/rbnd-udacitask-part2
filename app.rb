@@ -2,6 +2,7 @@
  require 'colorize'
  require 'pp'
  require 'rainbow'
+ require 'formatador'
 # Find a third gem of your choice and add it to your project
 require 'date'
 require_relative "lib/listable"
@@ -13,7 +14,6 @@ require_relative "lib/link"
 
 list = UdaciList.new(title: "Julia's Stuff")
 list.add("todo", "Buy more cat food", due: "2016-02-03", priority: "low")
-list.all
 list.add("todo", "Sweep floors", due: "2016-01-30")
 list.add("todo", "Buy groceries", priority: "high")
 list.add("event", "Birthday Party", start_date: "2016-05-08")
@@ -47,4 +47,7 @@ list.all
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
-pp new_list.filter("event")
+#pp new_list.filter("event")
+new_list.filter("event").class
+
+Formatador.display_table new_list.filter("event")

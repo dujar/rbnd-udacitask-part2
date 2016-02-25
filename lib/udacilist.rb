@@ -22,7 +22,7 @@ class UdaciList
     if @items.delete_at(index - 1) == nil
         raise UdaciListErrors::IndexExceedsListSize, " There is no item to delete there, only #{@items.count} items."
     else
-        @items.delete_at(index-1)
+        items.delete_at(index-1)
     end
 
   end
