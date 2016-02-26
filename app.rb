@@ -48,6 +48,5 @@ list.all
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
 #pp new_list.filter("event")
-new_list.filter("event").class
+new_list.filter("event")
 
-Formatador.display_table new_list.filter("event")

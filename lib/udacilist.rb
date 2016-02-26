@@ -45,12 +45,21 @@ class UdaciList
           selected = TodoItem
       end
       theone =[]
+      thetitle = self.title
      @items.each do |select|
           if select.class == selected
               theone << select
           end
-      end
-
-      return theone
+     end
+          if theone == nil
+            message =  Rainbow("It seems this Item has not yet been added.").bg(:blue)
+            return puts message
+          end
+            puts "-" * thetitle.length
+            puts "#{thetitle} -- filetered by #{item.colorize(:green)}"
+            puts "-" * thetitle.length
+            theone.each_with_index do |item, position|
+            puts "#{position + 1}) #{item.details}"
+            end
   end
 end
